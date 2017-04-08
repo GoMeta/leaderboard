@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-weight: 100;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+    color: rgb(78, 86, 101);
+    line-height: 22pt;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+header h1 {
+    font-size: 17pt;
+    font-weight: 100;
+}
+
+.logo {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.leaderboard {
+    text-align: center;
+    font-size: 17pt;
+}
+
+.description {
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4a9bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+thead tr {
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f8f8f8;
+    height: 38pt;
+}
+
+th {
+    width: 50px;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 15px;
+}
+
+tr {
+    height: 49px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: none;
+}
+
+tr.highlight {
+    background-color: rgba(74, 156, 255, 0.1);
+}
+
+tr:hover {
+    background-color: #f8f8f8;
+}
+
+td {
+    width: 50px;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 15px;
+}
