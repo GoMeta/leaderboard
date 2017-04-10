@@ -2,31 +2,31 @@
 To access a leaderboard the URL format is <host>/?id=<leaderboardid>
 
 The following API endpoints are available:
-## /create.php
+## /api/create.php
 Create a new leaderboard, parameters required:
 - name: Leaderboard name
 - logo: URL to a logo image
 - description: Description of the leaderboard
 
-## /create.php
+## /api/create.php
 Create a new leaderboard, parameters required:
 - name: Leaderboard name
 - logo: URL to a logo image
 - description: Description of the leaderboard
 **Returns an 'apikey' for this database to be used in subsequent calls.**
 
-## /modify.php
+## /api/modify.php
 Modify an existing leaderboard:
 - apikey: API Key for this leaderboard
 - name: Leaderboard name
 - logo: URL to a logo image
 - description: Description of the leaderboard
 
-## /delete.php
+## /apidelete.php
 Soft Delete existing leaderboard:
 - apikey: API Key for this leaderboard
 
-## /update.php
+## /api/update.php
 Insert or update a user's score:
 - apikey: API Key for this leaderboard
 - username: User whose score is being modified.
