@@ -1,5 +1,5 @@
 # Metaverse Leaderboard Project
-To access a leaderboard the URL format is <host>/?id=<leaderboardid>
+To access a leaderboard the URL format is *host*/?id=*leaderboardid*
 
 The following API endpoints are available:
 ## /api/create.php
@@ -13,7 +13,8 @@ Create a new leaderboard, parameters required:
 - name: Leaderboard name
 - logo: URL to a logo image
 - description: Description of the leaderboard
-**Returns an 'apikey' for this database to be used in subsequent calls.**
+
+*Returns an 'apikey' for this database to be used in subsequent calls.*
 
 ## /api/modify.php
 Modify an existing leaderboard:
