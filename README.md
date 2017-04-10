@@ -22,7 +22,7 @@ Modify an existing leaderboard:
 - logo: URL to a logo image
 - description: Description of the leaderboard
 
-## /apidelete.php
+## /api/delete.php
 Soft Delete existing leaderboard:
 - apikey: API Key for this leaderboard
 
