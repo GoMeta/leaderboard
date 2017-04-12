@@ -8,6 +8,8 @@ Create a new leaderboard, parameters required:
 - **logo:** URL to a logo image
 - **description:** Description of the leaderboard
 
+ -*Returns an 'apikey' for this database to be used in subsequent calls.*
+
 ## /api/modify.php
 Modify an existing leaderboard:
 - **apikey:** API Key for this leaderboard
