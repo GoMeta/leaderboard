@@ -18,12 +18,14 @@ A successful request will return an API key to be used in subsequent calls.
 The leaderboard is then updated by making a POST request to `http://leaderboards.metaverseapp.io/api/update.php`. To configure Metaverse to update your leaderboard, you must use the Javascript sandboxes to make an update request in response to the event you would like to score. This can be done by hooking into the event system within your dimension to execute custom code in response to events.
 
 If you would like to update a leaderboard in response to an event, such as an experience being completed in your dimension, register a new event handler in the "Events" page with the following options:
-Display name: `Increment leaderboard`
-Description: `Increment a user's rank on the leaderboard when they complete an experience`
-Event name: `experience_completed`
-Direct object: `*`
-Indirect object: `*`
-Code: ```
+
+- Display name: `Increment leaderboard`
+- Description: `Increment a user's rank on the leaderboard when they complete an experience`
+- Event name: `experience_completed`
+- Direct object: `*`
+- Indirect object: `*`
+- Code:
+```
 const user = await Meta.contexts.loadUser(Meta.data.event.subject);
 
 Meta.actions.post('http://leaderboards.metaverseapp.io/api/update.php', {
