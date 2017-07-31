@@ -95,3 +95,40 @@ td {
     vertical-align: middle;
     padding-left: 15px;
 }
+
+.create {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  border-radius: 2px;
+  font-size: 14pt;
+  border: 1px solid rgba(0,0,0,0.125);
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 14pt;
+  padding: 6px 8px;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.125);
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.125);
+    cursor: pointer;
+}
+
+#response {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.125);
+  background-color: rgba(0,0,0,0.05);
+  font-family: monospace;
+  margin-top: 30px;
+  border-radius: 5px;
+}

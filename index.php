@@ -75,6 +75,41 @@ if ($leaderboard) {
         ?>
         </tbody>
     </table>
+<?php } else { ?>
+    <div class="create">
+      <h1>Create new leaderboard</h1>
+      <div>Leaderboard name</div>
+      <input type="text" name="name" id="name"/>
+      <div>URL of a logo image</div>
+      <input type="text" name="logo" id="logo" />
+      <div>Description of the leaderboard</div>
+      <input type="text" name="description" id="description" />
+      <button type="button" onclick="onClick()">Create</button>
+      <div id="response">
+      ...
+      </div>
+    </div>
+
+    <script>
+// might make things kinda messy but prolly pure js here....?
+function onClick() {
+  const name = document.getElementById('name').value;
+  const logo = document.getElementById('logo').value;
+  const description = document.getElementById('description').value;
+  fetch('./api/create.php', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: `name=${name}&logo=${logo}&description=${description}`,
+  }).then((e) => e.json()).then((resp) => {
+    console.log(resp);
+    document.getElementById('response').innerHTML = `Leaderboard Created. Your leaderboard apikey is '${resp.apikey}', please copy this id and store it in a safe place. <br />See your leaderboard at <a href="http://leaderboards.metaverseapp.io?id=${resp.id}" target="_blank">http://leaderboards.metaverseapp.io?id=${resp.id}</a>`;
+
+  })
+  document.getElementById('response').innerHTML = "Processing...";
+}
+    </script>
 <?php } ?>
 </body>
 </html>
