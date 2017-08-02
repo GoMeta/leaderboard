@@ -80,7 +80,7 @@ if ($leaderboard) {
       <div class="title">
         <img id="titleimg" src="./img/leaderboardIcon.png" alt="Leaderboard Icon" />
         <h1>Create new leaderboard</h1>
-        <a href="https://www.youtube.com/watch?v=DovHBMwZ3W8" target="_blank"><img src="./img/play.svg" style="margin-bottom: -4px;margin-right: 5px;" /> How to use leaderboards</a>
+        <a href="https://www.youtube.com/watch?v=HA4t2WWTJ4U" target="_blank"><img src="./img/play.svg" style="margin-bottom: -4px;margin-right: 5px;" /> How to use leaderboards</a>
       </div>
 
       <div>Leaderboard name</div>
@@ -96,7 +96,6 @@ if ($leaderboard) {
     </div>
 
     <script>
-// might make things kinda messy but prolly pure js here....?
 function onClick() {
   const name = document.getElementById('name').value;
   const logo = document.getElementById('logo').value;
