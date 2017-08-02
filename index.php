@@ -25,7 +25,7 @@ if ($leaderboard) {
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,500,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>
-        <?php echo $leaderboard ? "{$leaderboard['name']} Leaderboard" : "Leaderboard Not Found"; ?>
+        <?php echo $leaderboard ? "{$leaderboard['name']} Leaderboard" : "Leaderboards - Metaverse"; ?>
     </title>
 </head>
 <body>
@@ -77,7 +77,12 @@ if ($leaderboard) {
     </table>
 <?php } else { ?>
     <div class="create">
-      <h1>Create new leaderboard</h1>
+      <div class="title">
+        <img id="titleimg" src="./img/leaderboardIcon.png" alt="Leaderboard Icon" />
+        <h1>Create new leaderboard</h1>
+        <a href="https://www.youtube.com/watch?v=DovHBMwZ3W8" target="_blank"><img src="./img/play.svg" style="margin-bottom: -4px;margin-right: 5px;" /> How to use leaderboards</a>
+      </div>
+
       <div>Leaderboard name</div>
       <input type="text" name="name" id="name"/>
       <div>URL of a logo image</div>
@@ -85,7 +90,7 @@ if ($leaderboard) {
       <div>Description of the leaderboard</div>
       <input type="text" name="description" id="description" />
       <button type="button" onclick="onClick()">Create</button>
-      <div id="response">
+      <div id="response" style="display: none;">
       ...
       </div>
     </div>
@@ -107,6 +112,7 @@ function onClick() {
     document.getElementById('response').innerHTML = `Leaderboard Created. Your leaderboard apikey is '${resp.apikey}', please copy this id and store it in a safe place. <br />See your leaderboard at <a href="http://leaderboards.metaverseapp.io?id=${resp.id}" target="_blank">http://leaderboards.metaverseapp.io?id=${resp.id}</a>`;
 
   })
+  document.getElementById('response').style.display = 'block';
   document.getElementById('response').innerHTML = "Processing...";
 }
     </script>

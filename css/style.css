@@ -111,15 +111,17 @@ input {
 }
 
 button {
+  background-color: #4a9bff;
+  color: #fff;
   font-size: 14pt;
-  padding: 6px 8px;
+  padding: 10px 14px;
   border-radius: 2px;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.125);
+  font-weight: bold;
+  border: none;
 }
 
 button:hover {
-    background-color: rgba(0,0,0,0.125);
+    background-color: #3a8bef;
     cursor: pointer;
 }
 
@@ -131,4 +133,18 @@ button:hover {
   font-family: monospace;
   margin-top: 30px;
   border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+#titleimg {
+  width: 120px;
+}
+
+.title a {
+  font-weight: 400;
 }
